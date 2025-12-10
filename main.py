@@ -35,7 +35,7 @@ def conectar_bd():
 # /visitas_periodo – puxar registros incrementais
 # ----------------------------------------------------
 @app.get("/visitas_gerente")
-def visitas_periodo(last_date: str = "2025-07-01T00:00:00"):
+def visitas_gerente(last_date: str = "2025-07-01T00:00:00"):
     try:
         conn = conectar_bd()
         cursor = conn.cursor(as_dict=True)
