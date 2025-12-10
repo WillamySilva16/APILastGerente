@@ -60,8 +60,8 @@ def visitas_gerente(last_date: str = "2025-07-01T00:00:00"):
                 saidaCliente,
                 dataHoraEncerramentoOS
                 FROM Tab_Gerente
-            WHERE DATA_HORA_INICIO > %s
-            ORDER BY DATA_HORA_INICIO ASC
+            WHERE chegadaCliente > %s
+            ORDER BY chegadaCliente ASC
         """
 
         cursor.execute(query, (last_date,))
