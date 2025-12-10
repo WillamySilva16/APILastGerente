@@ -58,7 +58,7 @@ def visitas_periodo(last_date: str = "2025-07-01T00:00:00"):
                 oportunidadeNovosNegocios,
                 ameacaContrato,
                 saidaCliente,
-                dataHoraEncerramentoOS,
+                dataHoraEncerramentoOS
                 FROM Tab_Gerente
             WHERE DATA_HORA_INICIO > %s
             ORDER BY DATA_HORA_INICIO ASC
